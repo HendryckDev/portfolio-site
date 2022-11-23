@@ -63,6 +63,26 @@ img {
     display: grid;
     gap: 1.5rem;
 }
+
+.section { 
+    padding: 1rem 4rem;
+}
+
+.section-title {
+    font-size: 4rem;
+    color: #682BD7;
+}
+
+.section-subtitle {
+    display: block;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.section-title, .section-subtitle {
+    text-align: center;
+}
 /* ================== NAV ================== */
 .logo-color {
     color: #682BD7;
@@ -93,7 +113,7 @@ img {
 }
 
 .nav-item {
-    margin: 0 15px;
+    margin: 0 36px;
 }
 
 .nav-link {
@@ -192,7 +212,7 @@ img {
     border-radius: 50%;
     object-fit: cover;
     position: relative;
-    right: 10.5rem;
+    right: 12.7rem;
     top: 3.5rem;
     border: 12px solid #191A1C;
     outline: 3px solid #682BD7;
@@ -201,7 +221,7 @@ img {
 .icons-contact {
     position: relative;
     top: 7rem;
-    right: 10rem;
+    right: 13rem;
     border: none;
     border-radius: 50px;
     color: #fff;
@@ -242,4 +262,32 @@ img {
 .icons a:hover::after {
     width: 100%;
     left: 0;
+}
+
+/* ================== ABOUT ================== */
+.about {
+    position: relative;
+    top: 30rem;
+}
+
+.about-description {
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 58rem;
+    word-break: break-word;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+}
+
+.about-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-bg p {
+    padding: 6rem 2.5rem;
+    border: none;
+    background-image: linear-gradient(90deg, rgba(31,32,34,1) 0%, rgba(31,32,34,0) 60%);
+    border-radius: 50px;
 }

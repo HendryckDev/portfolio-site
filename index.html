@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shurtcut icon" href="img/mini logo.png" type="image/x=icon">
     <!-- ================= UNICONS ================= -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
@@ -19,8 +20,8 @@
             <a href="#" class="nav__logo"><span class="logo-color">{</span>hendryck-dev<span class="logo-color">}</span></a>
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contactme</a></li>
@@ -33,13 +34,13 @@
     </header>
     <!-- ================= MAIN ================= -->
     <main class="main">
-        <section class="home section">
+        <section class="home" id="home">
             <div class="home-data">
                 <h1 class="home-title">Olá, Meu nome é Hendryck</h1>
                 <h2 class="home-subtitle">Frontend Developer</h2>
                 <p class="home-description">No momento sou Frontend Developer com 1 ano de experiência, 
                     posso produzir um site para você de qualidade como esse!</p>
-                    <a href="#" class="button button-flex">Download CV</a>
+                    <a href="download/profile cv.pdf" target="_blank" class="button button-flex">Download CV</a>
             </div>
             <div class="profile">
                 <div class="profile-pic">
@@ -47,12 +48,69 @@
                 </div>
                 <div class="icons-contact">
                     <div class="icons icons-btn">
-                        <a href="#"><i class="uil uil-github"></i></a>
-                        <a href="#"><i class="uil uil-envelope"></i></a>
-                        <a href="#"><i class="uil uil-linkedin"></i></a>
+                        <a href="https://github.com/HendryckDev" target="_blank"><i class="uil uil-github"></i></a>
+                        <a href="mailto:contatohendrycklima@hotmail.com" target="_blank"><i class="uil uil-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/hendrycknickolas/" target="_blank"><i class="uil uil-linkedin"></i></a>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- ================= ABOUT ================= -->
+        <section class="about section" id="about">
+            <span class="section-subtitle">Deixe-me apresentar</span>
+            <h1 class="section-title">Sobre mim</h1>
+            <div class="about-data about-bg">
+                <p class="about-description">Tenho 16 anos, sou do Brasil, comecei como desenvolvedor front end no início de 2021. 
+                    sou muito apaixonado e dedicado a este trabalho sempre procuro aprender mais e novas linguagens, 
+                    aproveito cada etapa do processo de design / programação da discussão e colaboração ao conceito e execução. 
+                    Sempre farei o meu melhor para entregar um excelente serviço.</p>
+            </div>
+            <section class="skills section">
+                <div class="skills-container container grid">
+                    <div>
+                        <div class="skills-content">
+                            <div class="skill-list grid">
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">HTML / CSS</h3>
+                                        <span class="skills-number">90%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills__html-css"></span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">JAVASCRIPT</h3>
+                                        <span class="skills-number">70%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-javascript"></span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">MYSQL</h3>
+                                        <span class="skills-number">95%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-bootstrap"></span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <div class="skills-titles">
+                                        <h3 class="skills-name">REACT</h3>
+                                        <span class="skills-number">75%</span>
+                                    </div>
+                                    <div class="skills-bar">
+                                        <span class="skills-percentage skills-react"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 </body>
