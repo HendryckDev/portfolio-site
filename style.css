@@ -286,7 +286,7 @@ img {
 }
 
 .about-bg p {
-    padding: 6rem 2.5rem;
+    padding: 4.5rem 2.5rem;
     border: none;
     background-image: linear-gradient(90deg, rgba(31,32,34,1) 0%, rgba(31,32,34,0) 60%);
     border-radius: 50px;
@@ -394,5 +394,38 @@ img {
 /* ================== SERVICES ================== */
 .services {
     position: relative;
-    top: 35rem;
+    top: 37rem;
 }
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5.5rem;
+}
+
+.services-content {
+    position: relative;
+    padding: 3.5rem .5rem 1.25rem 1.5rem;
+    width: 17rem;
+}
+
+.services-icon {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 2.25rem;
+    text-align: center;
+}
+
+.services-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.services-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* ================== PORTFOLIO ================== */
