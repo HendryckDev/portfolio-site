@@ -291,3 +291,108 @@ img {
     background-image: linear-gradient(90deg, rgba(31,32,34,1) 0%, rgba(31,32,34,0) 60%);
     border-radius: 50px;
 }
+
+/* ================== ABOUT SKILLS ================== */
+.skills {
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+.skills-bar {
+    width: 900px;
+    padding: 25px 30px;
+}
+
+.skills-bar .bar {
+    margin: 40px 0;
+}
+
+.skills-bar .bar:first-child {
+    margin-top: 0px;
+}
+
+.skills-bar .bar .info {
+    margin-bottom: .5rem;
+}
+
+.skills-bar .bar .info span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.skills-bar .bar .progress-bar {
+    position: relative;
+    height: 8px;
+    width: 100%;
+    background: #1F2022;
+    border-radius: .25rem;
+}
+
+.bar .progress-bar span {
+    height: 100%;
+    width: 80%;
+    background: #682BD7;
+    position: absolute;
+    border-radius: .25rem;
+}
+
+.progress-bar.html-css span {
+    width: 90%;
+}
+
+.progress-bar.javascript span{
+    width: 80%;
+}
+
+.progress-bar.mysql span {
+    width: 95%;
+}
+
+.progress-bar.react span {
+    width: 75%;
+}
+
+.bar .progress-bar span::before {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #682BD7;
+}
+
+.bar .progress-bar span::after {
+    position: absolute;
+    right: 0;
+    top: -38px;
+    color: #919296;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.progress-bar.html-css span::after {
+    content: '90%';
+}
+
+.progress-bar.javascript span::after {
+    content: '80%';
+}
+
+.progress-bar.mysql span::after {
+    content: '95%';
+}
+
+.progress-bar.react span::after {
+    content: '75%';
+}
+
+/* ================== SERVICES ================== */
+.services {
+    position: relative;
+    top: 35rem;
+}
