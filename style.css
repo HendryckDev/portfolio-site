@@ -526,3 +526,83 @@ img {
 .swiper-button-next {
     right: 15.5rem !important;
 }
+
+/* ================== CONTACT ================== */
+.contact {
+    position: relative;
+    top: 61.3rem;
+}
+
+.contact-subtitle {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.contact-container {
+    row-gap: 3rem;
+}
+
+.contact-content {
+    border-radius: .5rem;
+    padding: 3rem 1rem .25rem;
+}
+
+.contact-label {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contact-input {
+    width: 100%;
+    outline: none;
+    padding: .5rem 0;
+    color: #fff;
+    position: relative;
+    background: transparent;
+    border-bottom: 3px solid #6A6A6A;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+.contact-input {
+    font-size: 1.2rem;
+}
+
+.contact-form {
+    width: 700px;
+    justify-self: center;
+    margin-top: 5rem;
+}
+
+.contact-inputs {
+    display: flex;
+}
+
+textarea {
+    height: 4.2rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0;
+}
+
+.textarea {
+    border: 0;
+    border-bottom: 3px solid #6A6A6A;
+    line-height: 1.5rem;
+    background: transparent;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.contact-button {
+    position: relative;
+    padding: 15px 35px;
+    top: .5rem;
+    justify-self: center;
+}
+
+.contact-icon {
+    font-size: 1.7rem;
+}
