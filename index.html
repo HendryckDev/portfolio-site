@@ -10,6 +10,7 @@
     
     <!-- ================= css ================= -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     
     <title>Portfolio Hendryck Nickolas</title>
 </head>
@@ -23,8 +24,8 @@
                     <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contactme</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 </ul>
             </div>
             <div class="nav__btns">
@@ -117,6 +118,56 @@
                 </div>
             </div>
         </section>
+        <!-- ================= PORTFOLIO ================= -->
+        <section class="portfolio section" id="portfolio">
+            <span class="section-subtitle">Meus Projetos</span>
+            <h1 class="section-title">Portfolio</h1>
+            <div class="portfolio-container container swiper">
+                <div class="swiper-wrapper">
+                    <!-- ================= PORTFOLIO 1 ================= -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="img/portfolio.png" alt="portfolio image" class="portfolio-image">
+                        <div class="portfolio-data">
+                            <h1 class="portfolio-title">Profile Landing Page</h1>
+                            <p class="portfolio-description">Projeto simples de interface de web site pessoal desenvolvido para Hendryck Nickolas, profissional da área de TI.</p>
+                            <a href="https://www.behance.net/gallery/126749015/Portfolio-website" target="_blank" class="button button-flex portfolio-button">View design</a>
+                        </div>
+                    </div>
+                    <!-- ================= PORTFOLIO 2 ================= -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="img/portfolio2.png" alt="portfolio image" class="portfolio-image2">
+                        <div class="portfolio-data">
+                            <h1 class="portfolio-title">Ecommerce Landing Page</h1>
+                            <p class="portfolio-description">Website Ecommerce desenvolvido para a empresa Mamy Corujinha, site de bebe e chupetas</p>
+                            <a href="https://www.behance.net/gallery/137038031/Mamy-corujinha-website" target="_blank" class="button button-flex portfolio-button">View design</a>
+                        </div>
+                    </div>
+                    <!-- ================= PORTFOLIO 3 ================= -->
+                    <!-- <div class="portfolio-content grid">
+                        <img src="img/portfolio.png" alt="portfolio image" class="portfolio-image">
+                        <div class="portfolio-data">
+                            <h1 class="portfolio-title">Profile Landing Page</h1>
+                            <p class="portfolio-description">Projeto simples de interface de web site pessoal desenvolvido para Hendryck Nickolas, profissional da área de TI.</p>
+                            <a href="#" class="button button-flex portfolio-button">View design</a>
+                        </div>
+                    </div> -->
+                </div>
+                
+                <!-- ADD ARROWS -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <!-- ADD PAGINATION -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </main>
+    <!-- ================= SWIPER JS ================= -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- ================= MAIN JS ================= -->
+    <script src="js/main.js"></script>
 </body>
 </html>
