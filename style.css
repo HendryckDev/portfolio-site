@@ -11,6 +11,68 @@ body {
     height: 510vh;
 }
 
+.light {
+    background: url(img/Portfolio\ final\ \(branco\).png);
+    color: #191A1C;
+}
+
+.light a {
+    color: #191A1C !important;
+}
+
+.light i {
+    color: #191A1C;
+}
+
+.light p {
+    color: #353535;
+}
+
+.light .icons {
+    background-color: #DADADA;
+}
+
+.light .about-bg p {
+    background: linear-gradient(90deg, rgba(233,233,233,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.light .profile-pic img {
+    border: 12px solid #FAFAF7;
+}
+
+.light .button-flex {
+    color: #fff !important;
+}
+
+.light .button:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.light .portfolio-image {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 1);
+}
+
+.light .portfolio-image2 {
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .5);
+}
+
+.light .textarea {
+    color: #191A1C;
+}
+
+.light textarea {
+    color: #191A1C;
+}
+
+.light .uil-sun {
+    display: none;
+}
+
+.light .uil-moon {
+    display: block;
+    visibility: initial;
+}
+
 /* ========== Button Dark/light ========== */
 .nav__btns {
     display: flex;
@@ -27,6 +89,12 @@ body {
 
 .change-theme:hover {
     color: #682BD7;
+}
+
+.uil-moon {
+    position: relative;
+    right: 2.6rem;
+    visibility: hidden;
 }
 
 /* ========== Base ========== */
