@@ -8,6 +8,7 @@ body {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     background: url(img/Portfolio\ final\ \(preto\).png);
+    background-size: cover;
     height: 510vh;
 }
 
@@ -216,6 +217,14 @@ img {
     width: 100%;
     left: 0;
 }
+
+.mobile-menu {
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
 /* ================== HOME ================== */
 .home__container {
     gap: 1rem;
@@ -284,7 +293,7 @@ img {
     border-radius: 50%;
     object-fit: cover;
     position: relative;
-    right: 12.7rem;
+    right: 6rem;
     top: 3.5rem;
     border: 12px solid #191A1C;
     outline: 3px solid #682BD7;
@@ -293,7 +302,7 @@ img {
 .icons-contact {
     position: relative;
     top: 7rem;
-    right: 13rem;
+    right: 6rem;
     border: none;
     border-radius: 50px;
     color: #fff;
@@ -584,7 +593,7 @@ img {
 }
 
 .swiper-horizontal > .swiper-pagination-bullets {
-    bottom: 0 !important;
+    bottom: 0px !important;
 }
 
 .swiper-button-prev {
@@ -673,4 +682,368 @@ textarea {
 
 .contact-icon {
     font-size: 1.7rem;
+}
+
+/* ================== MEDIA QUERIES ================== */
+@media screen and (max-width: 1480px) {
+    .home-title,
+    .home-subtitle {
+        font-size: 2.5rem;
+    }
+    .profile {
+        padding: 0;
+        margin-top: 10rem;
+    }
+    .profile-pic img{
+        width: 18.5rem;
+        height: 18.5rem;
+    }
+    .icons-contact {
+        top: 6rem;
+        right: 12.5rem;
+        padding: 1px 2.5rem;
+    }
+    .button {
+        padding: 20px 30px;
+    }
+    .about-description {
+        font-size: 1.1rem;
+    }
+    .portfolio-image,
+    .portfolio-image2 {
+        width: 415px;
+        height: 229px;
+    }
+    .portfolio-content {
+        gap: 2rem;
+    }
+    .swiper-button-prev {
+        left: 4rem !important;
+    }
+    .swiper-button-next {
+        right: 4rem !important;
+    }
+    .contact-button {
+        top: -.5rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        background-size: cover;
+    }
+    .nav {
+        padding: 3rem 1rem;
+    }
+    .nav__logo {
+        white-space: nowrap;
+    }
+    .logo-color {
+        padding: 5px;
+    }
+    .nav-item {
+        margin: 0 20px;
+    }
+    .home-data {
+        padding: 30px;
+        top: 9rem;
+    }
+    .home-title,
+    .home-subtitle {
+        font-size: 2.2rem;
+    }
+    .home-subtitle {
+        letter-spacing: 7px;
+    }
+    .home-description {
+        width: 28rem;
+    }
+    .profile {
+        margin-top: 10rem;
+        margin-right: 0rem;
+        padding: 1rem;
+    }
+    .profile-pic img {
+        right: 0;
+        top: 0;
+    }
+    .icons-contact {
+        right: 0;
+        top: 3rem;
+    }
+    .skills {
+        justify-content: center;
+    }
+    .portfolio {
+        padding: 1rem 3rem;
+    }
+    .portfolio-content {
+        padding: 0 1rem;
+    }
+    .portfolio-title {
+        margin-bottom: .7rem;
+    }
+    .portfolio-description {
+        width: 23rem;
+        font-size: 1.2rem;
+    }
+    .portfolio-image {
+        width: 350px;
+        height: 200px;
+        margin-top: 1rem;
+    }
+    .portfolio-image2 {
+        width: 350px;
+        height: 200px;
+        margin-top: 2rem;
+    }
+    .swiper-button-next {
+        right: 1px !important;
+    }
+    .swiper-button-prev {
+        left: 0px !important;
+    }
+    .contact-label {
+        font-size: 1.7rem;
+    }
+    .contact-input {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        background-size: cover;
+    }
+    .light body {
+        overflow-x: hidden;
+        background-size: cover;
+    }
+    .section {
+        padding: 1rem 1rem;
+    }
+    .light .nav-list {
+        background: #DADADA;
+    }
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 100vh;
+        background: #1F2022;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 10;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .change-theme {
+        z-index: 10;
+    }
+    .uil-moon {
+        right: 1rem;
+    }
+    .home-title,
+    .home-subtitle {
+        font-size: 1.6rem;
+    }
+    .home-description {
+        width: 22rem;
+    }
+    .profile-pic img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .icons a {
+        font-size: 2rem;
+        margin-left: .8rem;
+    }
+    .about {
+        top: 15rem;
+    }
+    .about-description {
+        font-size: 1rem;
+    }
+    .skills-bar {
+        width: 768px;
+    }
+    .services {
+        top: 20rem;
+    }
+    .services-content {
+        padding: 3.5rem 0.5rem 1.25rem;
+    }
+    .services-icon {
+        margin-bottom: 1.5rem;
+        font-size: 1.7rem;
+    }
+    .services-title {
+        font-size: 1.4rem;
+    }
+    .services-subtitle {
+        font-size: .9rem;
+    }
+    .portfolio {
+        top: 30rem;
+    }
+    .portfolio-container {
+        margin-top: 5rem;
+    }
+    .portfolio-content {
+        gap: 0;
+    }
+    .portfolio-image,
+    .portfolio-image2 {
+        width: 250px;
+        height: 170px;
+    }
+    .portfolio-image2 {
+        margin-top: 1rem;
+    }
+    .portfolio-title {
+        font-size: 1.4rem;
+    }
+    .portfolio-description {
+        width: 17.3rem;
+        font-size: 1.1rem;
+    }
+    .swiper-button-prev {
+        left: 1rem !important;
+    }
+    .swiper-button-next {
+        right: 1rem !important;
+    }
+    .contact {
+        top: 35rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: baseline;
+    }
+    .home-data {
+        top: 3rem;
+    }
+    .home-subtitle {
+        font-size: 1.4rem;
+    }
+    .profile {
+        margin: 0;
+        padding: 4rem;
+    }
+    .profile-pic img {
+        margin-top: 0;
+    }
+    .section-title {
+        font-size: 3rem;
+    }
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    .skills-bar {
+        width: 425px;
+    }
+    .services-container {
+        margin: 0;
+        display: grid;
+        justify-content: center;
+    }
+    .services-content {
+        padding: 1rem;
+    }
+    .portfolio-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio-container {
+        height: 600px;
+        margin-top: 0;
+    }
+    .portfolio-data {
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+    .portfolio-title {
+        text-align: center;
+    }
+    .portfolio-description {
+        width: auto;
+    }
+    .portfolio-button {
+        margin-left: 5rem;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets {
+        bottom: -3px !important;
+    }
+    .portfolio-image,
+    .portfolio-image2 {
+        margin-top: 6rem;
+    }
+    .contact-form {
+        width: 350px;
+    }
+    .contact-label {
+        font-size: 1.5rem;
+    }
+    .contact-content {
+        padding: 3rem 0 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .icons a {
+        font-size: 2.3rem;
+        margin-left: 0.8rem;
+    }
+    .icons {
+        width: 11rem;
+    }
+    .nav {
+        padding: 3rem 0;
+    }
+    .nav__logo {
+        font-size: 1.2rem;
+    }
+    .profile {
+        padding: 3rem;
+    }
+    .home-data {
+        padding: 0;
+    }
+    .skills-bar {
+        width: 375px;
+    }
+    .contact-form {
+        width: 316px;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+    display: flex;
+}
+
+/* ================== KEY FRAMES ================== */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
