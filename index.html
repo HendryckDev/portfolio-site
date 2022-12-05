@@ -18,15 +18,15 @@
     <!-- ================= HEADER ================= -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#home" class="nav__logo"><span class="logo-color">{</span>hendryck-dev<span class="logo-color">}</span></a>
+            <a href="#home" class="nav__logo hidden"><span class="logo-color">{</span>hendryck-dev<span class="logo-color">}</span></a>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link  light-header">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link  light-header">About</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item hidden"><a href="#home" class="nav-link  light-header">Home</a></li>
+                    <li class="nav-item hidden"><a href="#about" class="nav-link  light-header">About</a></li>
+                    <li class="nav-item hiddens"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item hiddenx"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item hiddenx"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-            <div id="change-theme" class="nav__btns">
+            <div id="change-theme" class="nav__btns hiddenx">
                 <i class="uil uil-sun change-theme"></i>
                 <i class="uil uil-moon change-theme"></i>
             </div>
@@ -36,18 +36,18 @@
     <!-- ================= MAIN ================= -->
     <main class="main">
         <section class="home section" id="home">
-            <div class="home-data">
-                <h1 class="home-title">Olá, Meu nome é Hendryck</h1>
+            <div class="home-data hidden">
+                <h1 class="home-title text-wrapper">Olá, Meu nome é Hendryck</h1>
                 <h2 class="home-subtitle">Frontend Developer</h2>
                 <p class="home-description">No momento sou Frontend Developer com 1 ano de experiência, 
                     posso produzir um site para você de qualidade como esse!</p>
                     <a href="download/profile cv.pdf" target="_blank" class="button button-flex">Download CV</a>
             </div>
             <div class="profile">
-                <div class="profile-pic">
+                <div class="profile-pic hiddenx">
                     <img src="img/contact me.png" alt="Porfile picture">
                 </div>
-                <div class="icons-contact">
+                <div class="icons-contact hiddenx">
                     <div class="icons icons-btn">
                         <a href="https://github.com/HendryckDev" target="_blank"><i class="uil uil-github"></i></a>
                         <a href="mailto:contatohendrycklima@hotmail.com" target="_blank"><i class="uil uil-envelope"></i></a>
@@ -58,9 +58,9 @@
         </section>
         <!-- ================= ABOUT ================= -->
         <section class="about section" id="about">
-            <span class="section-subtitle">Deixe-me apresentar</span>
-            <h1 class="section-title">Sobre mim</h1>
-            <div class="about-data about-bg">
+            <span class="section-subtitle hiddens">Deixe-me apresentar</span>
+            <h1 class="section-title hiddens">Sobre mim</h1>
+            <div class="about-data about-bg hiddens">
                 <p class="about-description">Tenho 16 anos, sou do Brasil, comecei como desenvolvedor front end no início de 2021. 
                     sou muito apaixonado e dedicado a este trabalho sempre procuro aprender mais e novas linguagens, 
                     aproveito cada etapa do processo de design / programação da discussão e colaboração ao conceito e execução. 
@@ -68,25 +68,25 @@
             </div>
             <section class="skills section">
                 <div class="skills-bar">
-                    <div class="bar">
+                    <div class="bar hiddens">
                         <div class="info">
                             <span>HTML / CSS</span>
                         </div>
                         <div class="progress-bar html-css"><span></span></div>
                     </div>
-                    <div class="bar">
+                    <div class="bar hiddens">
                         <div class="info">
                             <span>JAVASCRIPT</span>
                         </div>
                         <div class="progress-bar javascript"><span></span></div>
                     </div>
-                    <div class="bar">
+                    <div class="bar hiddens">
                         <div class="info">
                             <span>MYSQL</span>
                         </div>
                         <div class="progress-bar mysql"><span></span></div>
                     </div>
-                    <div class="bar">
+                    <div class="bar hiddens">
                         <div class="info">
                             <span>REACT</span>
                         </div>
@@ -97,21 +97,21 @@
         </section>
         <!-- ================= SERVICES ================= -->
         <section class="services section" id="services">
-            <span class="section-subtitle">O que eu vou fazer por você</span>
-            <h1 class="section-title">Serviços</h1>
+            <span class="section-subtitle hidden">O que eu vou fazer por você</span>
+            <h1 class="section-title hidden">Serviços</h1>
             <div class="services-container container grid">
                 <!-- ================= SERVICES 1 ================= -->
-                <div class="services-content">
+                <div class="services-content hidden">
                     <i class="uil uil-desktop-alt services-icon"></i>
                     <h1 class="services-title">Criação de Sites</h1>
                     <p class="services-subtitle">Eu uso várias tecnologias da web para desenvolver sites atraentes que convertem visitantes em clientes.</p>
                 </div>
-                <div class="services-content">
+                <div class="services-content hiddens">
                     <i class="uil uil-mobile-android-alt services-icon"></i>
                     <h1 class="services-title">Sites Responsivos</h1>
                     <p class="services-subtitle">Criação de sites responsivos para a melhor visualização em todas as resoluções.</p>
                 </div>
-                <div class="services-content">
+                <div class="services-content hiddenx">
                     <i class="uil uil-desktop-alt-slash services-icon"></i>
                     <h1 class="services-title">Em breve</h1>
                     <p class="services-subtitle">Espaço para mais novidades.</p>
@@ -119,7 +119,7 @@
             </div>
         </section>
         <!-- ================= PORTFOLIO ================= -->
-        <section class="portfolio section" id="portfolio">
+        <section class="portfolio section hidden" id="portfolio">
             <span class="section-subtitle">Meus Projetos</span>
             <h1 class="section-title">Portfolio</h1>
             <div class="portfolio-container container swiper">
@@ -166,9 +166,9 @@
         </section>
         <!-- ================= CONTACT ================= -->
         <section class="contact section" id="contact">
-            <span class="section-subtitle contact-subtitle">Tem uma pergunta ou proposta, ou apenas deseja dizer oi? Vá em frente.</span>
-            <h1 class="section-title">Contact</h1>
-            <div class="contact-container container grid">
+            <span class="section-subtitle contact-subtitle hiddenx">Tem uma pergunta ou proposta, ou apenas deseja dizer oi? Vá em frente.</span>
+            <h1 class="section-title hiddenx">Contact</h1>
+            <div class="contact-container container grid hiddenx">
                 <form action="" method="post" class="contact-form grid">
                     <div class="contact-inputs grid">
                         <div class="contact-content">
@@ -195,6 +195,7 @@
     </main>
     <!-- ================= SWIPER JS ================= -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/anime.min.js"></script>
     <!-- ================= MAIN JS ================= -->
     <script src="js/main.js"></script>
 </body>

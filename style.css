@@ -10,6 +10,7 @@ body {
     background: url(img/Portfolio\ final\ \(preto\).png);
     background-size: cover;
     height: 510vh;
+    overflow-x: hidden;
 }
 
 .light {
@@ -98,7 +99,7 @@ body {
     visibility: hidden;
 }
 
-/* ========== Base ========== */
+/* ========== Base document ========== */
 * {
     padding: 0;
     margin: 0;
@@ -198,6 +199,7 @@ img {
 .nav-item a {
     color: #fff;
     position: relative;
+    transition: all 1.5s;
 }
 
 .nav-item a::after {
@@ -225,6 +227,33 @@ img {
     display: none;
     z-index: 10;
 }
+/* ================== SHOW/HIDDEN SCROLL ================== */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.hiddenx {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translate(100%);
+    transition: all 1.5s;
+}
+
+.hiddens {
+    opacity: 0;
+    filter: blur(5px);
+    transform: scale(100%);
+    transition: all 1.5s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 /* ================== HOME ================== */
 .home__container {
     gap: 1rem;
@@ -242,15 +271,27 @@ img {
     font-weight: 600;
     font-size: 3rem;
 }
-
 .home-subtitle {
     color: #682BD7;
     font-size: 3rem;
     letter-spacing: 10px;
 }
 
+.text-wrapper .letter {
+    display: inline-block;
+  }
+
+.home-subtitle .letter2 {
+    display: inline-block;
+}
+
+.home-description .letter3 {
+    display: inline-block;
+}
+
+
 .home-description {
-    width: 40rem;
+    width: 41rem;
     padding-top: 1.5rem;
     font-weight: 300;
     font-size: 1.25rem;
