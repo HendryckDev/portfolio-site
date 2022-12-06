@@ -238,8 +238,8 @@ img {
 .hiddenx {
     opacity: 0;
     filter: blur(5px);
-    transform: translate(100%);
-    transition: all 1.5s;
+    transform: translateX(7%);
+    transition: all 2.5s;
 }
 
 .hiddens {
