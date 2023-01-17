@@ -971,6 +971,9 @@ textarea {
 }
 
 @media screen and (max-width: 425px) {
+    .light {
+        background: none;
+    }
     .home {
         display: flex;
         flex-direction: column-reverse;
