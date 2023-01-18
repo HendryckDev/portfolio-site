@@ -972,7 +972,10 @@ textarea {
 
 @media screen and (max-width: 425px) {
     .light {
-        background: none;
+        background: url(img/Portfolio\ final\ \(branco\)\ sem\ bola.png);
+    }
+    body {
+        background: url(img/Portfolio\ final\ \(preto\)\ sem\ bola.png);
     }
     .home {
         display: flex;
@@ -1049,7 +1052,10 @@ textarea {
 
 @media screen and (max-width: 375px) {
     .light {
-        background: none;
+        background: url(img/Portfolio\ final\ \(branco\)\ sem\ bola.png);
+    }
+    body {
+        background: url(img/Portfolio\ final\ \(preto\)\ sem\ bola.png);
     }
     .icons a {
         font-size: 2.3rem;
