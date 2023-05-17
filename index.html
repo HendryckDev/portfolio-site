@@ -171,18 +171,20 @@
             <div class="contact-container container grid hiddenx">
                 <form action="https://formsubmit.co/contatohendrycklima@hotmail.com" method="post" class="contact-form grid">
                     <div class="contact-inputs grid">
+                        <input type="hidden" name="_subject" value="Novo email!!">
                         <div class="contact-content">
-                            <label for="" class="contact-label">Seu Nome</label>
-                            <input placeholder="Coloque seu nome" type="text" class="contact-input textarea">
+                            <label for="message" class="contact-label">Seu Nome</label>
+                            <input placeholder="Coloque seu nome" type="text" name="name" id="message" class="contact-input textarea" required>
                         </div>
+                        <input type="hidden" name="_next" value="https://hendryckdev.github.io/portfolio-site/">
                         <div class="contact-content">
-                            <label for="" class="contact-label">Seu Email</label>
-                            <input placeholder="Coloque seu email" type="email" class="contact-input textarea" required>
+                            <label for="email" class="contact-label">Seu Email</label>
+                            <input placeholder="Coloque seu email" type="email" name="email" id="email" class="contact-input textarea" required>
                         </div>
                     </div>
                         <div class="contact-content">
-                            <label for="" class="contact-label">Sua mensagem</label>
-                            <textarea placeholder="Olá, acho que precisamos de um webiste para nossos produtos na Empresa X. Em quanto tempo você pode discutir isso?" type="message" id="" cols="0" rows="7" class="contact-input"></textarea>
+                            <label for="message" class="contact-label">Sua mensagem</label>
+                            <textarea placeholder="Olá, acho que precisamos de um webiste para nossos produtos na Empresa X. Em quanto tempo você pode discutir isso?" type="message" name="message" id="message" cols="0" rows="7" class="contact-input" required></textarea>
                         </div>
                         <div class="contact-button">
                             <button type="submit" class="button button-flex contact-button">
